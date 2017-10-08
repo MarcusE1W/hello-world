@@ -35,7 +35,8 @@ In this section you can describe the language keywords. The syntax looks a bit c
 - `statement:` defines the keywords of the language. YOu can cram all keywords in one statement or split them up on several statements.
 - `special:` can be used to highlight certain keywords of a language in a different color to the othe rkeywords. In Ocaml the function definition is worht a special highlight. In Elixir the `do` and `end` could be useful to highlight. It is down to you if you want to use it at all and for which keywords.
 
-For each of the above sections a string is defined with the relevant keywords: e.g. `"\\b(?i:(int|float|bool|char|string|unit))\\b"`. To define your own profile replace the part in the inner brackets () with your own keywords.
+For each of the above sections a string is defined with the relevant keywords: 
+e.g. `"\\b(?i:(int|float|bool|char|string|unit))\\b"`. To define your own profile replace the part in the inner brackets () with your own keywords.
 
 e.g.
 ```
