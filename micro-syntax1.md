@@ -39,7 +39,7 @@ For each of the above sections a string is defined with the relevant keywords:
 e.g. `"\\b(?i:(int|float|bool|char|string|unit))\\b"`. To define your own profile replace the part in the inner brackets () with your own keywords.
 
 e.g.
-```
+``` Yaml
     - type: "\\b(?i:(int|float|bool|char|string|unit))\\b"
     - statement: "\\b(if|then|else)\\b"
     - statement: "\\b(for|and|or)\\b"
