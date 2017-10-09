@@ -20,7 +20,7 @@ The filetype gets detected by the file ending described with `detect:`. For adva
 With the `rules:` keyword the actual language description gets started. Please mind that indentation is important. Everything after `rules:` has to be indented.
 
 e.g.
-```
+``` Yaml
 filetype: Test-lang
 
 detect:
@@ -53,7 +53,7 @@ e.g.
 Symbols are used in many languages for different thing. That said most languages use similar symbols, so from the highlighting perspactive there is not so much difference. Below list of symbols gives you some common symbols and operators. These can be extended for you r language. There is no need to remove unused symbols. They just do not get used.
 
 e.g.
-```
+``` Yaml
     - symbol: "(\\||@|!|:|::|_|~|=|\\\\|;|\\(\\)|||\\[|\\]|\\{|\\})"
 
     - symbol.operator: "(==|/=|&&|\\|\\||<|>|<=|>=)"
@@ -63,7 +63,7 @@ e.g.
 Language constants means words like `true` that are no statements and cannot be changed. Depending on the language there can be other constants.
 
 e.g.
-```
+``` Yaml
     - constant: "(Nothing|Just|LT|EQ|GT)"
 
     - constant.bool: "\\b(true|false)\\b"
@@ -74,7 +74,7 @@ e.g.
 Strings in most languages are within within quotation marks " " and characters are within singel quote ' '. In this case you can just use the example below. The additional rule is to show additional controls in the string. e.g "Hallo /n" If your languages does not have that you can also write `rules: []`
 
 e.g.
-```
+``` Yaml
     - constant.string:
         start: "\""
         end: "\""
@@ -94,7 +94,7 @@ e.g.
 Most languages have different symbols for single line and multi liine comments.
 
 e.g. for a multi line comment (*...*)
-```
+``` Yaml
     - comment:
         start: "\\(\\*"
         end: "\\*\\)"
@@ -103,7 +103,7 @@ e.g. for a multi line comment (*...*)
 ```
 
 e.g. for a single line comment after # ...
-```
+``` Yaml
     - comment:
         start: "#"
         end: "$"
@@ -113,7 +113,7 @@ e.g. for a single line comment after # ...
 To keep the overview in your syntax file you can and should add some comments. Single line comments in a `.yaml` file start with `#`. There are no multi line comments.
 
 e.g. for a single line comment with a comment
-```
+``` Yaml
     # single line comment # ...
     - comment:
         start: "#"
